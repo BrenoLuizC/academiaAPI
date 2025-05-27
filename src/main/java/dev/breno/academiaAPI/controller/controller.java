@@ -1,4 +1,4 @@
-package dev.breno.academiaAPI;
+package dev.breno.academiaAPI.controller;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
