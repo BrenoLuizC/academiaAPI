@@ -14,10 +14,11 @@ public class clientService {
     @Autowired
     private clientRepository clientRepository;
 
-    clientModel client = new clientModel(10L, "teste", 5);
-
-    @GetMapping
     public List<clientModel> listAll() {
         return clientRepository.findAll();
+    }
+
+    public clientModel save(clientModel client) {
+        return clientRepository.save(client);
     }
 }
